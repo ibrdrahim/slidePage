@@ -26,6 +26,9 @@ class ViewController: UIViewController {
         scrollView.addSubview(view3)
         
         self.scrollView.contentSize = CGSize(width: self.view.frame.width * 3, height: self.view.frame.height)
+        
+        // hide the scrol bar.
+        scrollView?.showsHorizontalScrollIndicator = false
     }
 
     override func didReceiveMemoryWarning() {
